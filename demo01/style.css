@@ -137,6 +137,50 @@ body {
   transform: rotate(180deg);
 }
 
+/* Socials link */
+.social-link {
+  position: fixed;
+  left: 0px;
+  z-index: 97;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.social-link .hamburger {
+  padding: 14px 10px 10px;
+  background: #D6E040;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.social-link .hamburger span {
+  display: block;
+  margin: 0px auto;
+  clear: both;
+  width: 25px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #fff;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.1, 0.2, 1.18);
+  -moz-transition: all 0.3s cubic-bezier(0.25, 0.1, 0.2, 1.18);
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.2, 1.18);
+}
+
+.social-link .social-item li {
+  text-align: center;
+  background: #D6E040;
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 5px;
+}
+
+.social-link .social-item li a {
+  color: #fff;
+}
+
 /* Header
 -------------------------------------------------------------- */
 #site-header {
