@@ -359,10 +359,91 @@ body {
   padding: 50px 0 0;
 }
 
+/* Footer
+-------------------------------------------------------------- */
+#footer {
+  position: relative;
+  background-color: #223353;
+  color: #fff;
+}
 
+#footer a {
+  color: #fff;
+}
 
+#footer-inner {
+  padding-top: 50px;
+}
 
+#footer .title-wrap .title {
+  font-size: 24px;
+}
 
+#footer-logo {
+  text-align: center;
+  margin-bottom: 50px;
+}
 
+#footer-logo img {
+  display: inline-block;
+}
 
-/* */
+#footer .information a .fa {
+    margin-right: 10px;
+}
+
+/* Footer Document */
+#footer .ducument-item {
+  margin-right: 70px;
+}
+
+#footer .ducument-item .icon {
+  width: 135px;
+  height: 135px;
+  line-height: 135px;
+  text-align: center;
+  border: 1px solid #D6E040;
+  color: #D6E040;
+  font-size: 60px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+#footer .ducument-item .icon:after {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 110%;
+  height: 110%;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  -ms-transition: -ms-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -150%, 0);
+  -ms-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -150%, 0);
+  -moz-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -150%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -150%, 0);
+  content: '';
+}
+
+#footer .ducument-item .icon:hover:after {
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 150%, 0);
+  -ms-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 150%, 0);
+  -moz-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 150%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 150%, 0);
+}
+
+#footer .ducument-item .text {
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  color: #D6E040;
+}
+
+#copyright {
+  padding: 20px 0;
+}

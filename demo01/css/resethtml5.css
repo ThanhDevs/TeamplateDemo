@@ -149,6 +149,15 @@ p {
   text-align: left !important;
 }
 
+/* Display */
+.tblock {
+  display: block;
+}
+
+.tinline-block {
+  display: inline-block;
+}
+
 /* Clearfix */
 .clearfix:after,
 .clearfix:before {
@@ -156,7 +165,6 @@ p {
   display: block;
   clear: both;
 }
-
 
 /* Title */
 .title-wrap {
@@ -303,6 +311,30 @@ ul.slick-dots {
 .section-line-block .section-line:nth-of-type(3) {
     right: 16px;
     bottom: 200px;
+}
+
+.horizontal-line-block .horizontal-line {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    height: 2px;
+    background: #D6E040;
+}
+
+.horizontal-line-block .horizontal-line:nth-of-type(1) {
+    top: 0;
+    left: 0;
+}
+
+.horizontal-line-block .horizontal-line:nth-of-type(2) {
+    top: 8px;
+    left: 10%;
+}
+
+.horizontal-line-block .horizontal-line:nth-of-type(3) {
+    top: 16px;
+    left: 20%;
 }
 
 /* TownHouse */
