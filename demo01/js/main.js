@@ -13,6 +13,7 @@
       });
     }
 
+    // Sliders
     var sliderShow = function() {
       $('.single-item-slider').slick({
         dots: true,
@@ -20,11 +21,28 @@
       });
     }
 
+    // Show Main Menu
+    var showMainMenu = function() {
+      $('#hamburger').on('click', function() {
+        $('#main-menu').toggleClass('is-show')
+        $('#main-menu .main-menu--cls').toggleClass('is-show')
+      });
+
+      $('#main-menu .main-menu--cls').on('click', function() {
+        $('#main-menu').removeClass('is-show')
+        $('#main-menu .main-menu--cls').removeClass('is-show')
+      })
+    }
+
     // Dom Ready
     $(function() {
 
       // Zoom Image
       zoomImage();
+
+      // Sliders
       sliderShow();
+
+      showMainMenu();
     });
 })(jQuery);
