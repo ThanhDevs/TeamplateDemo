@@ -1,0 +1,371 @@
+/**
+ * Theme Name:
+ * Version: 1.0
+ * Description:
+ * Author: HCJ TEAM
+ * Author URI: https://lavanthanh.com
+ */
+
+@import "css/resethtml5.css";
+@import "css/font-awesome.min.css";
+
+/* Start
+-------------------------------------------------------------- */
+body {
+  font-size: 18px;
+  font-family: 'Main-Font-Regular', sans-serif;
+  color: #48474D;
+  line-height: 25px;
+}
+
+/* Header
+-------------------------------------------------------------- */
+#site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: transparent;
+}
+
+#site-header-inner {
+  padding: 40px 60px 0;
+}
+
+/* Hotline */
+.header-hotline {
+  color: #fff;
+}
+
+.header-hotline .hotline-numb a {
+  font-weight: 600;
+  color: #D6E040;
+  font-size: 32px;
+  display: block;
+  line-height: 38px;
+}
+
+
+/* Banner
+-------------------------------------------------------------- */
+.row-banner-img {
+    position: relative;
+    overflow: hidden;
+    background-size: cover !important;
+    background-position: center center !important;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat !important;
+    z-index: 1;
+}
+
+.row-banner-text {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    z-index: 10;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.row-banner-text h2 {
+  font-family: 'Main-Font-SemiBold', sans-serif;
+  font-size: 50px;
+  text-shadow: 3px 3px #333;
+  line-height: 1;
+  margin-top: 15px;
+  letter-spacing: 0.4px;
+}
+
+.row-banner-text p {
+  font-family: 'Main-Font-Regular', sans-serif;
+  font-size: 35px;
+  line-height: 1;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px #333;
+  padding-left: 3px;
+}
+
+.row-banner .scroll-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.row-banner .scroll-btn .fa {
+  display: block;
+  text-align: center;
+}
+
+/* Banner Form */
+.row-banner-form {
+  position: absolute;
+  z-index: 1000;
+  right: 0;
+  bottom: 0;
+  top: 140px;
+  background: rgba(34, 51, 83, 0.7);
+  padding: 40px 23px;
+  float: right;
+  max-height: 510px;
+  margin-right: 40px;
+  color: #fff;
+}
+
+.row-banner-form .form-title {
+  font-family: Main-Font-SemiBold;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #D6E040;
+  margin-bottom: 30px;
+}
+
+.row-banner-form .form-group label {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+/* Button Submit */
+.row-banner-form .btn:after {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 110%;
+  height: 110%;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  -ms-transition: -ms-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -150%, 0);
+  -ms-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -150%, 0);
+  -moz-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -150%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -150%, 0);
+  content: '';
+}
+
+.row-banner-form .btn:hover:after {
+  webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 150%, 0);
+  -moz-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 150%, 0);
+  -ms-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 150%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 150%, 0);
+}
+
+/* Socials logo */
+.row-banner-form .social-network-login {
+  text-align: center;
+  color: #FFF;
+}
+
+.row-banner-form .social-network-item {
+  display: block;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  width: calc(50% - 7px);
+  margin-right: 14px;
+  text-align: center;
+  color: #fff;
+}
+
+.row-banner-form .social-network-item.social-facebook {
+  background-color: #314B7E;
+}
+
+.row-banner-form .social-network-item.social-google {
+  margin-right: 0;
+  background-color: #BE272F;
+}
+
+/* Banner line */
+.banner-line-block .banner-line {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    height: 2px;
+    background: #D6E040;
+}
+
+.banner-line-block .banner-line:nth-of-type(1) {
+    bottom: 0;
+    left: 0;
+}
+
+.banner-line-block .banner-line:nth-of-type(2) {
+    bottom: 8px;
+    left: 10%;
+}
+
+.banner-line-block .banner-line:nth-of-type(3) {
+    bottom: 16px;
+    left: 20%;
+}
+
+/* Tổng quan
+-------------------------------------------------------------- */
+.row-overview {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.row-overview-text {
+  display: flex;
+  margin: 0 0 50px;
+}
+
+.row-overview-text .text-title {
+  display: block;
+  float: left;
+  background: #D6E040;
+  margin-right: calc((100%)/12);
+  padding: 40px 35px;
+}
+
+.row-overview-text .text-title .title {
+  font-size: 44px;
+  letter-spacing: -2px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #283554;
+  margin-bottom: 5px;
+}
+
+.row-overview-text .text-title .desc {
+    color: #283554;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.row-overview-text .text-content {
+  display: block;
+  float: left;
+  text-align: justify;
+}
+
+/* Acreage */
+.acreage-item {
+  margin-bottom: 50px;
+}
+
+.acreage-item-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.acreage-item-numb {
+  color: #283554;
+  font-size: 83px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.acreage-item-numb .ha {
+  color: #a8a8a8;
+  font-size: 70px !important;
+}
+
+/* location
+-------------------------------------------------------------- */
+.row-location,
+.row-shophouse {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  background: #223353;
+  color: #fff;
+}
+
+/* Image box */
+.row-location .image-box {
+  overflow: hidden;
+  min-height: 500px;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+
+.row-location .btn-zoom {
+  display: flex;
+}
+
+.row-location .btn-zoom .zoom-in,
+.row-location .btn-zoom .zoom-out {
+  position: absolute;
+  bottom: 30px;
+  right: 90px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100%;
+  background: #223353;
+}
+
+.row-location .btn-zoom .zoom-out {
+  right: 30px;
+}
+
+/* Text box */
+.row-location .text-box {
+    padding: 60px;
+}
+
+.row-location .text-box .inner {
+  overflow: auto;
+}
+
+.row-location .text-box .title {
+  font-size: 32px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  font-weight: 400;
+}
+
+.row-location .text-box .title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 90px;
+  height: 1.5px;
+  background: #D6E040;
+}
+
+.row-location .text-item .icon {
+    max-width: 50px;
+}
+
+.row-location .text-item .des {
+    overflow: hidden;
+    padding-left: 6px;
+}
+/*  */
+
+/* ShopHouse
+-------------------------------------------------------------- */
+.row-shophouse {
+
+}
+
+
+
+
+
+
+
+/* */
