@@ -1,5 +1,12 @@
 ;(function($) {
     'use strict'
+
+    /*
+      *Zoom Image
+     * Sliders
+     * Show Main Menu
+     */
+
     var zoomImage = function() {
       // Get section
       var $section = $('.row-location');
@@ -34,6 +41,32 @@
       })
     }
 
+    // Scroll
+    var scrollFun = function() {
+      $(window).scroll(function() {
+        var scroll = $(this).scrollTop(),
+            overviewOffSetTop = $('#overview').offset().top,
+            overviewOuterHeight = $('#overview').outerHeight(),
+            windowHeight = $(window).height()
+
+        // console.log((overviewOffSetTop - overviewOuterHeight), scroll )
+        if (scroll > (overviewOffSetTop + overviewOuterHeight - windowHeight)) {
+          $('.row-banner-form').addClass('fixed-form')
+          $('.form-btn-fixed').addClass('show-form-btn')
+        } else if (scroll < (overviewOffSetTop + overviewOuterHeight - windowHeight)) {
+          $('.row-banner-form').removeClass('fixed-form')
+          $('.form-btn-fixed').removeClass('show-form-btn')
+          $('.row-banner-form').removeClass('is-show')
+        }
+
+        // Show Form
+        $('.form-btn-fixed').on('click', function() {
+          $('.row-banner-form').addClass('is-show')
+        })
+
+      })
+    }
+
     // Dom Ready
     $(function() {
 
@@ -43,6 +76,10 @@
       // Sliders
       sliderShow();
 
+      //Show Main Menu
       showMainMenu();
+
+      // Scroll Function
+      scrollFun();
     });
 })(jQuery);
