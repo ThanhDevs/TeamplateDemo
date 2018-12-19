@@ -8,6 +8,8 @@
 
 @import "css/resethtml5.css";
 @import "css/font-awesome.min.css";
+@import 'css/slick.css';
+@import "css/slick-theme.css";
 
 /* Start
 -------------------------------------------------------------- */
@@ -276,15 +278,6 @@ body {
 
 /* location
 -------------------------------------------------------------- */
-.row-location,
-.row-shophouse {
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  background: #223353;
-  color: #fff;
-}
-
 /* Image box */
 .row-location .image-box {
   overflow: hidden;
@@ -311,6 +304,7 @@ body {
   text-align: center;
   border-radius: 100%;
   background: #223353;
+  color: #fff;
 }
 
 .row-location .btn-zoom .zoom-out {
@@ -318,8 +312,11 @@ body {
 }
 
 /* Text box */
-.row-location .text-box {
+.text-box {
     padding: 60px;
+    position: relative;
+    min-height: 600px;
+    height: 100vh;
 }
 
 .row-location .text-box .inner {
@@ -359,7 +356,7 @@ body {
 /* ShopHouse
 -------------------------------------------------------------- */
 .row-shophouse {
-
+  padding: 50px 0 0;
 }
 
 

@@ -13,10 +13,18 @@
       });
     }
 
+    var sliderShow = function() {
+      $('.single-item-slider').slick({
+        dots: true,
+        arrows: false
+      });
+    }
+
     // Dom Ready
     $(function() {
 
       // Zoom Image
       zoomImage();
+      sliderShow();
     });
 })(jQuery);

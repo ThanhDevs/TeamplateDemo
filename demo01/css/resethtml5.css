@@ -138,15 +138,15 @@ p {
 }
 
 .ttext-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .ttext-right {
-  text-align: right;
+  text-align: right !important;
 }
 
 .ttext-left {
-  text-align: left;
+  text-align: left !important;
 }
 
 /* Clearfix */
@@ -155,6 +155,48 @@ p {
   content: "";
   display: block;
   clear: both;
+}
+
+
+/* Title */
+.title-wrap {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title-wrap .title {
+  font-size: 32px;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 400;
+}
+
+.title-wrap .sep {
+    width: 70px;
+    height: 2px;
+    background-color: #c5d042;
+    display: inline-block;
+}
+
+.title-wrap .sep.w140 {
+  width: 140px;
+}
+
+/* Color */
+.ttext-action {
+  color: #c5d042 !important;
+}
+
+.ttext-white {
+  color: #fff !important;
+}
+
+.tbg-action {
+  background-color: #c5d042 !important;
+}
+
+.tbg-white {
+  background-color: #fff !important;
 }
 
 /* Form  */
@@ -196,6 +238,86 @@ form .btn-full-width {
   display: block;
 }
 
+/* Slider */
+.slick-slider {
+    /* margin-bottom: 0 !important; */
+}
+
+ul.slick-dots {
+    bottom: 15px;
+}
+
+.slick-dots li {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.slick-dots li button {
+  background-color: #ced22d!important;
+  border-radius: 50%;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.slick-dots li button:before {
+    display: none;
+}
+
+/* Has Images */
+.has-imgs {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  background: #223353;
+  color: #fff;
+}
+
+.has-imgs .image {
+  min-height: 600px;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Section line */
+.section-line-block .section-line {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    width: 2px;
+    background: #D6E040;
+}
+
+.section-line-block .section-line:nth-of-type(1) {
+    right: 0;
+    bottom: -20px;
+}
+
+.section-line-block .section-line:nth-of-type(2) {
+    right: 8px;
+    bottom: 100px;
+}
+
+.section-line-block .section-line:nth-of-type(3) {
+    right: 16px;
+    bottom: 200px;
+}
+
+/* TownHouse */
+.row-townhouse .section-line-block .section-line:nth-of-type(1) {
+  left: 0;
+}
+
+.row-townhouse .section-line-block .section-line:nth-of-type(2) {
+  left: 8px;
+}
+
+.row-townhouse .section-line-block .section-line:nth-of-type(3) {
+  left: 16px;
+}
+
 /* Layout */
 .twrap-full {
   width: 1200px;
@@ -209,7 +331,7 @@ form .btn-full-width {
 }
 
 .no-padding {
-  padding: 0; 
+  padding: 0;
 }
 .no-padding-left {
   padding-left: 0 !important;
