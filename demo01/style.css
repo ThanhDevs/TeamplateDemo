@@ -175,6 +175,7 @@ body {
   height: 45px;
   line-height: 45px;
   margin-bottom: 5px;
+  list-style: none;
 }
 
 .social-link .social-item li a {
