@@ -644,7 +644,6 @@ body {
 }
 
 .ttabs .tab-content {
-  padding: 20px 20px 15px;
   display: none;
 }
 
@@ -731,11 +730,11 @@ body {
 }
 
 .row-agent-list .logo-image {
-  padding: 0 15px;
+  /* padding: 0 15px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 280px !important;
+  /* width: 280px !important; */
   height: 280px !important;
   margin-right: 50px;
 }
@@ -845,4 +844,84 @@ body {
 
 #copyright {
   padding: 20px 0;
+}
+
+
+/* RESPONSIVE */
+@media only screen and (max-width: 991px) {
+  .title-wrap .title {
+    font-size: 25px !important;
+  }
+
+  #footer-inner {
+    padding-top: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .has-imgs .image,
+  .row-location .image-box {
+    height: auto !important;
+    min-height: inherit;
+  }
+
+  .form-btn-fixed {
+    bottom: 0;
+    top: unset;
+  }
+
+  .text-box {
+    padding: 30px 0;
+    height: auto !important;
+    min-height: inherit;
+  }
+
+  .location-img.pr-80 {
+    padding-right: 0 !important;
+  }
+
+  .ttabs .tab-nav li {
+    margin: 0 4px 12px;
+  }
+
+  .utilitie-list .list-list {
+    padding-left: 0;
+  }
+
+  .utilitie-list .list-list .list-list-item {
+    column-count: 2;
+  }
+
+  #footer .ducument-item {
+    margin-right: 0;
+    word-break: break-word;
+  }
+
+  #footer .ducument-item .icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    margin: 0 auto;
+  }
+
+  #footer-inner {
+    padding-top: 30px !!important;
+  }
+
+  /* Slider */
+  .row-agent-list .logo-image {
+    margin-right: 0;
+    min-width: 280px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .utilitie-list .list-list .list-list-item {
+    column-count: 1;
+  }
+
+  .utilitie-list .list-des {
+    margin-bottom: 25px;
+  }
 }

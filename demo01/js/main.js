@@ -73,7 +73,25 @@
         dots: true,
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 4
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       });
     }
 
