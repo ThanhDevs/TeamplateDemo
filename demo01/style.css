@@ -246,7 +246,7 @@ body {
   line-height: 1;
   margin-bottom: 10px;
   text-shadow: 1px 1px #333;
-  padding-left: 3px;
+  /* padding-left: 3px; */
 }
 
 .row-banner .scroll-btn {
@@ -937,6 +937,22 @@ body {
 
   #site-logo img {
     margin: 0 auto;
+  }
+
+  .row-banner-text {
+    bottom: 90px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .row-banner-text h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+
+  .row-banner-text p {
+    font-size: 20px;
   }
 }
 
