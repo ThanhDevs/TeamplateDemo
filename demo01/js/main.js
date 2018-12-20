@@ -145,6 +145,13 @@
         })
     }
 
+    // Remover Animate for mobile
+    var removerAnimateForMobile = function() {
+      if ($(window).width() < 767) {
+        $('.wow').removeClass('wow')
+      }
+    }
+
 
     // Dom Ready
     $(function() {
@@ -171,7 +178,7 @@
       tabs();
 
       // Wow js
-
+      removerAnimateForMobile();
       new WOW().init();
     });
 })(jQuery);

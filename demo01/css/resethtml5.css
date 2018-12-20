@@ -755,6 +755,10 @@ ul.slick-dots {
   .sm-block {
     display: block !important;
   }
+
+  .sm-ttext-dark {
+    color: #48474D !important;
+  }
 }
 
 @media only screen and (max-width: 500px) {
