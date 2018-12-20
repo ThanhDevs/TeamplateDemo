@@ -300,9 +300,9 @@ body {
   -webkit-transition: all 0.6s ease;
   -moz-transition: all 0.6s ease;
   transition: all 0.6s ease;
-  height: 100% !important;
   margin-right: 0 !important;
   display: block;
+  height: 100vh !important;
 }
 
 /* show form */
@@ -495,7 +495,7 @@ body {
 
 .acreage-item-numb {
   color: #283554;
-  font-size: 83px;
+  font-size: 60px;
   line-height: 1;
   font-weight: 600;
 }
@@ -978,5 +978,11 @@ body {
 
   .utilitie-list .list-des {
     margin-bottom: 25px;
+  }
+
+  /* Form */
+  .row-banner-form.fixed-form {
+    width: 100% !important;
+    min-height: 667px !important;
   }
 }
