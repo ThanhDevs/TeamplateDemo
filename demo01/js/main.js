@@ -62,6 +62,12 @@
         // Show Form
         $('.form-btn-fixed').on('click', function() {
           $('.row-banner-form').addClass('is-show')
+          $('#fixed-form-cls').addClass('fixed-form-cls')
+        })
+
+        // Hidden form
+        $('#fixed-form-cls').on('click', function() {
+          $('.row-banner-form').removeClass('is-show')
         })
 
       })
