@@ -169,5 +169,9 @@
 
       // Tabs
       tabs();
+
+      // Wow js
+
+      new WOW().init();
     });
 })(jQuery);
