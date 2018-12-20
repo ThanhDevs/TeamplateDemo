@@ -920,6 +920,14 @@ body {
     display: block;
     margin: 0;
   }
+
+  .row-overview-text .text-title {
+    margin-bottom: 25px;
+  }
+
+  .row-overview-text .tcol-9.tcol-sm-12.pl-80 {
+    padding-left: 0 !important;
+  }
 }
 
 @media only screen and (max-width: 500px) {
