@@ -78,10 +78,26 @@
       $('.angent-list-slider').slick({
         dots: true,
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToShow: 4,
+        slidesToScroll: 4
       });
     }
+
+    // Target Scroll Section
+    var targetScrollSection = function() {
+      $('#main-menu ul li a, .scroll-btn').on('click',function() {
+          var anchor = $(this).attr('href').split('#')[1];
+          if ( anchor ) {
+              if ( $('#'+anchor).length > 0 ) {
+                  var target = $('#'+anchor).offset().top
+
+                  $('html,body').animate({scrollTop: target}, 1000, 'easeInOutExpo')
+              }
+          }
+          return false;
+      });
+    }
+
 
     // Dom Ready
     $(function() {
@@ -100,5 +116,8 @@
 
       // Angent list
       angntList();
+
+      // Target Scroll Section
+      targetScrollSection();
     });
 })(jQuery);
