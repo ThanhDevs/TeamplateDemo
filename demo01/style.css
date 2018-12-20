@@ -928,6 +928,16 @@ body {
   .row-overview-text .tcol-9.tcol-sm-12.pl-80 {
     padding-left: 0 !important;
   }
+
+  #site-logo {
+    float: none;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  #site-logo img {
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 500px) {
