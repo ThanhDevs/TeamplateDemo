@@ -991,6 +991,6 @@ body {
   /* Form */
   .row-banner-form.fixed-form {
     width: 100% !important;
-    min-height: 1000px !important;
+    min-height: 1080px !important;
   }
 }
