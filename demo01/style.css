@@ -932,7 +932,7 @@ body {
   #site-logo {
     float: none;
     text-align: center;
-    margin-top: 30px;
+    margin: 30px auto 0 !important;
   }
 
   #site-logo img {
