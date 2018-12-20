@@ -450,15 +450,12 @@ body {
 }
 
 .row-overview-text {
-  display: flex;
   margin: 0 0 50px;
 }
 
 .row-overview-text .text-title {
   display: block;
-  float: left;
   background: #D6E040;
-  margin-right: calc((100%)/12);
   padding: 40px 35px;
 }
 
@@ -856,6 +853,10 @@ body {
   #footer-inner {
     padding-top: 50px !important;
   }
+
+  .row-overview {
+    padding: 50px 0;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -914,9 +915,18 @@ body {
     margin-right: 0;
     min-width: 280px;
   }
+
+  .row-overview-text {
+    display: block;
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  .acreage-item-numb {
+    font-size: 40px
+  }
+
   .utilitie-list .list-list .list-list-item {
     column-count: 1;
   }

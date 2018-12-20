@@ -183,6 +183,10 @@ p {
   padding-right: 80px;
 }
 
+.pl-80 {
+  padding-left: 80px;
+}
+
 /* Display */
 .tblock {
   display: block;
@@ -832,5 +836,9 @@ ul.slick-dots {
 
   .xs-block {
     display: block !important;
+  }
+
+  .ttext-xs-center {
+    text-align: center;
   }
 }
