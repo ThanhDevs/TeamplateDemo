@@ -344,6 +344,7 @@ body {
   pointer-events: none;
   cursor: pointer;
   width: 50px;
+  opacity: 0;
 }
 
 #fixed-form-cls.fixed-form-cls {
@@ -847,6 +848,13 @@ body {
 
 
 /* RESPONSIVE */
+
+@media only screen and (min-width: 1200px) {
+  .row-banner-form.fixed-form {
+    min-height: 1080px;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .title-wrap .title {
     font-size: 25px !important;
