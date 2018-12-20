@@ -73,6 +73,16 @@
       })
     }
 
+    // Angent list
+    var angntList = function() {
+      $('.angent-list-slider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+    }
+
     // Dom Ready
     $(function() {
 
@@ -87,5 +97,8 @@
 
       // Scroll Function
       scrollFun();
+
+      // Angent list
+      angntList();
     });
 })(jQuery);

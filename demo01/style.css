@@ -595,6 +595,39 @@ body {
   position: relative;
 }
 
+.utilitie-list {
+  padding: 50px 0;
+}
+
+.utilitie-list .list-list {
+  padding-left: 80px;
+}
+
+.utilitie-list .list-list  .list-list-item {
+  column-count: 3;
+  column-gap: 15px;
+}
+
+.utilitie-list .list-list  .list-list-item li {
+  display: table-row-group;
+  margin-bottom: 10px;
+}
+
+.utilitie-list .list-list .list-list-item li span {
+  display: table-cell;
+  width: 30px;
+  font-family: "Main-Font-SemiBold";
+  font-size: 20px;
+  color: #223352;
+}
+
+/* Agents list 
+-------------------------------------------------------------- */
+.row-agent-list {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 /* Footer
 -------------------------------------------------------------- */
 #footer {
