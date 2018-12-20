@@ -1,12 +1,6 @@
 ;(function($) {
     'use strict'
 
-    /*
-      *Zoom Image
-     * Sliders
-     * Show Main Menu
-     */
-
     var zoomImage = function() {
       // Get section
       var $section = $('.row-location');
@@ -98,6 +92,41 @@
       });
     }
 
+    // Tabs
+    var tabs = function() {
+        $('.ttabs, .ttabs.style1').each(function() {
+
+            $(this).find('.tab-nav li').first().addClass('active');
+            $(this).children('.tab-content').first().addClass('active').show()
+
+            $(this).find('.tab-nav li').on('click',function() {
+
+                var tabNavIndex = $(this).index();
+                var conIndex = $(this).parents('.ttabs').children('.tab-content').eq(tabNavIndex)
+
+                $(this).addClass('active').siblings().removeClass('active')
+                conIndex.addClass('active').siblings('.tab-content').removeClass('active')
+            })
+
+        })
+
+        $('.children-tabs').each(function() {
+
+            $(this).find('.children-tab-nav li').first().addClass('active');
+            $(this).children('.children-tab-content').first().addClass('active').show()
+
+            $(this).find('.children-tab-nav li').on('click',function() {
+
+                var tabNavIndex = $(this).index();
+                var conIndex = $(this).parents('.children-tabs').children('.children-tab-content').eq(tabNavIndex)
+
+                $(this).addClass('active').siblings().removeClass('active')
+                conIndex.addClass('active').siblings('.children-tab-content').removeClass('active')
+            })
+
+        })
+    }
+
 
     // Dom Ready
     $(function() {
@@ -119,5 +148,8 @@
 
       // Target Scroll Section
       targetScrollSection();
+
+      // Tabs
+      tabs();
     });
 })(jQuery);

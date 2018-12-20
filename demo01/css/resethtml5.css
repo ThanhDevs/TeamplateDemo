@@ -149,6 +149,36 @@ p {
   text-align: left !important;
 }
 
+/* Padding */
+.prl-10 {
+  padding: 0 10px;
+}
+
+.prl-15 {
+  padding: 0 15px;
+}
+
+.prl-20 {
+  padding: 0 20px;
+}
+
+.prl-25 {
+  padding: 0 25px;
+}
+
+.prl-30 {
+  padding: 0 30px;
+}
+
+.prl-35 {
+  padding: 0 35px;  
+}
+
+
+.pr-80 {
+  padding-right: 80px;
+}
+
 /* Display */
 .tblock {
   display: block;
@@ -214,11 +244,11 @@ form .form-group {
 
 form .form-group input {
   border: none;
-   width: 100%;
-   background: transparent;
-   border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
-   border: 0px;
-   color: #fff;
+  width: 100%;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
+  border: 0px;
+  color: #fff;
 }
 
 form .form-group input:focus {
@@ -290,51 +320,51 @@ ul.slick-dots {
 
 /* Section line */
 .section-line-block .section-line {
-    display: block;
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    width: 2px;
-    background: #D6E040;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  width: 2px;
+  background: #D6E040;
 }
 
 .section-line-block .section-line:nth-of-type(1) {
-    right: 0;
-    bottom: -20px;
+  right: 0;
+  bottom: -20px;
 }
 
 .section-line-block .section-line:nth-of-type(2) {
-    right: 8px;
-    bottom: 100px;
+  right: 8px;
+  bottom: 100px;
 }
 
 .section-line-block .section-line:nth-of-type(3) {
-    right: 16px;
-    bottom: 200px;
+  right: 16px;
+  bottom: 200px;
 }
 
 .horizontal-line-block .horizontal-line {
-    display: block;
-    position: absolute;
-    z-index: 10;
-    right: 0;
-    height: 2px;
-    background: #D6E040;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  height: 2px;
+  background: #D6E040;
 }
 
 .horizontal-line-block .horizontal-line:nth-of-type(1) {
-    top: 0;
-    left: 0;
+  top: 0;
+  left: 0;
 }
 
 .horizontal-line-block .horizontal-line:nth-of-type(2) {
-    top: 8px;
-    left: 10%;
+  top: 8px;
+  left: 10%;
 }
 
 .horizontal-line-block .horizontal-line:nth-of-type(3) {
-    top: 16px;
-    left: 20%;
+  top: 16px;
+  left: 20%;
 }
 
 /* TownHouse */

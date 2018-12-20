@@ -10,6 +10,7 @@
 @import "css/font-awesome.min.css";
 @import 'css/slick.css';
 @import "css/slick-theme.css";
+@import "css/animate.css";
 
 /* Start
 -------------------------------------------------------------- */
@@ -586,6 +587,104 @@ body {
 -------------------------------------------------------------- */
 .row-shophouse {
   padding: 50px 0 0;
+}
+
+/* Typical Groud
+-------------------------------------------------------------- */
+.row-typical-ground {
+  padding: 50px 0;
+  position: relative;;
+}
+
+.row-typical-ground:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 124px;
+  background-color: #223353;
+}
+
+.row-typical-ground .title-wrap {
+  margin-bottom: 47px;
+}
+
+.row-typical-ground .ttabs {
+  position: relative;
+  z-index: 2;
+}
+
+/* Tabs  */
+.ttabs .tab-nav {
+  list-style: none;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.ttabs .tab-nav li {
+  margin: 0 10px;
+  text-transform: uppercase;
+  padding: 0px;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  border: 1px solid #666;
+  min-width: 150px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.ttabs .tab-nav li.active {
+  background-color: #223353;
+  border: 1px solid #223353;
+  color: #fff;
+}
+
+.ttabs .tab-content {
+  padding: 20px 20px 15px;
+  display: none;
+}
+
+.ttabs .tab-content.active {
+  display: block;
+}
+
+/* Children Tabs */
+.children-tabs .children-tab-nav {
+  display: block;
+  text-align: left;
+}
+
+.children-tabs .children-tab-nav li {
+  display: block;
+  float: left;
+  margin: 0px 15px 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #D6E040;
+  padding: 5px 0;
+  cursor: pointer;
+  width: 125px;
+}
+
+.children-tabs .children-tab-nav li.active {
+  background-color: #D6E040;
+  border: 1px solid #D6E040;
+}
+
+.children-tabs .children-tab-content {
+  display: none;
+}
+
+.children-tabs .children-tab-content.active {
+  display: block;
+}
+
+.children-tabs .children-tab-content.active img {
+  margin: auto;
 }
 
 /* Utilities
